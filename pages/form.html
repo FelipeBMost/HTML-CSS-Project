@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../styles.css">
+  <link rel="stylesheet" href="./form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
+  <title>Form</title>
+</head>
+
+<body>
+  <header class="center-col">
+    <nav class="center-row sb w-big"> 
+      <a class="logo" href="./../index.html">Header Logo</a>
+      <ul class="center-row sb">
+        <li class="nav-item"><a href="./../index.html">header link one</a></li>
+        <li class="nav-item"><a href="./form.html">header link two</a></li>
+        <li class="nav-item"><a href="./results.html">header link three</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="form-hero" class="center-col">
+      <div class="center-row sb w-big">
+        <img src="./../images/ps6.webp" alt="New Playstation 6" width="520" height="230">
+        <div class="w-hero-text">
+          <h1>This form is awesome!</h1>
+          <p class="secondary grey">Sign up the form below for an extremely high chance of <span class="barely-blue">ALMOST</span> 100% to win a brand new PS6 with 2 controllers and a trip to the moon!<sup class="barely-blue">*</sup>
+          </p>
+          <a class="button" href="#form">Let's go!</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="form" class="center-col se">
+        <h2>The greatest form of all time!</h2>
+        <p class="barely-gray">All information is given at your own risk and we don't take blame for what happens to it</p>
+      <div class="center-col">
+        <div>
+          <form method="get" action="./results.html" class="secondary">
+            <fieldset class="center-row sb">
+              <legend>Personal Information:</legend>
+              <div class="field-container center-col">
+                <label for="first-name">First Name:</label>
+                <input 
+                  type="text" 
+                  id="first-name" 
+                  name="first-name">
+                <label for="last-name">Last Name:</label>
+                <input 
+                  type="text" 
+                  id="last-name" 
+                  name="last-name">
+                <label for="id-front">ID Document Front:</label>
+                <input 
+                  type="file" 
+                  id="id-front" 
+                  name="documents">
+              </div>
+              <div class="field-container center-col">
+                <label for="email">Email:</label>
+                <input 
+                  type="text" 
+                  id="email" 
+                  name="email" 
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                  required>
+                <label for="password">Instagram password:</label>
+                <input 
+                  type="password" 
+                  id="password" 
+                  name="password" 
+                  required>
+                <label for="id-back">ID Document Back:</label>
+                <input 
+                  type="file" 
+                  id="id-back" 
+                  name="documents">
+              </div>
+            </fieldset>
+
+            <fieldset class="center-row sb">
+              <legend>Financial information:</legend>
+                <div class="field-container center-col">
+                <label for="credit-card">Credit Card<sup>*</sup>:</label>
+                <input 
+                  type="file" 
+                  id="credit-card" 
+                  name="credit-card">
+                </div>
+                <div class="field-container center-col">
+                <label for="bank">Bank Account:</label>
+                <input 
+                  type="text" 
+                  name="bank" 
+                  id="bank">
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Terms and conditions:</legend>
+              <div class="field-container">
+                <input 
+                  type="checkbox" 
+                  id="terms" 
+                  name="terms" 
+                  checked>
+                <label for="terms" id="terms-label">I read the terms and accept giving all my information for a<span class="barely-gray">n ALMOST</span><br>garanteed chance to win prizes</label>
+              </div>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimony" class="center-col se">
+        <h3>Don't go away!</h3>
+        <p>See what our last winner is saying about her experience!</p>
+      <div class="center-row se">
+        <blockquote>&ldquo;Oh my god! I was so happy when I saw the green screen showing my prizes! It wasn't much of a surprise due to the odds, but still you need to take the risk to be able the win, which is the most difficult part. Don't overthink and just do it! That's my advice.&rdquo;</blockquote>
+        <img src="./../images/winner.jpg" alt="Smiley winner" width="200">
+      </div>
+      <a class="button" href="#form">Let's go!</a>
+    </section>
+  </main>
+
+  <footer class="center-col se">
+    <p>Copyright &#169;</p>
+    <p>*A small fee of 0.1<sub><del class="barely-blue">Million</del></sub> US$ may be charged to cover for taxes</p>
+  </footer>
+
+</body>
+</html>

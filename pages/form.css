@@ -1,0 +1,68 @@
+#form {
+  background-color: #E5E7EB;
+  color: #1F2937;
+  height: 800px;
+}
+.barely-gray {
+  color: #cfd5df;
+}
+.field-container {
+  align-items: flex-start;
+  padding: 20px 0;
+}
+label {
+  margin: 5px 0;
+}
+input {
+  color: #F9FAF8;
+  background-color: #1F2937;
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  text-indent: 5px;
+}
+input[type="file"]::file-selector-button {
+  font-family: 'Roboto', sans-serif;
+  color: #F9FAF8;
+  background-color: #1F2937;
+  border: none;
+  border-right: 1px solid #F9FAF8;
+  margin-top: 3px;
+  cursor: pointer;
+}
+#terms{
+  width: unset;
+  height: unset;
+}
+.barely-blue {
+  color: #314055;
+}
+input[type='submit'] {
+  width: 100px;
+  cursor: pointer;
+  align-self: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+#testimony {
+  background-color: #F9FAF8;
+  color: #1F2937;
+}
+#testimony blockquote {
+  font-size: 1.8em;
+  width: 60%;
+}
+#testimony div {
+  height: 60%;
+}
+#testimony h3 {
+  font-size: 2.4em;
+}
+@media (max-width:1100px) {
+  input {
+    width: 200px;
+  }
+}
