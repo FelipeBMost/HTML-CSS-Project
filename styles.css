@@ -54,7 +54,7 @@ section > div {
 .se {
   justify-content: space-evenly;
 }
-nav > menu {
+nav > ul {
   gap: 20px;
   color: #E5E7EB;
 }
