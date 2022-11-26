@@ -13,7 +13,7 @@ body {
   justify-content: center;
   font-size: 10px;
 }
-menu, ol, a {
+menu, li, ol, a {
   list-style: none;
   text-decoration: none;
   color:#F9FAF8;
